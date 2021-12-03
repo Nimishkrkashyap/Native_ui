@@ -4,15 +4,10 @@ import {Image, StyleSheet, Text, View} from 'react-native';
 const Card = () => {
   return (
     <View style={styles.container}>
-      <Image
-        source={{
-          uri: 'https://images.unsplash.com/photo-1585829365295-ab7cd400c167?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',}}
-        style={styles.image}
-      />
+      
       <Text style={styles.descrition}>
         Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
       </Text>
-      
     </View>
   );
 };
@@ -26,13 +21,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 10
+    paddingHorizontal: 10,
   },
   image: {
-    height: 100,
-    width: '25%',
+    height: 200,
+    width: 250,
     backgroundColor: 'teal',
-    borderRadius: 10
+    borderRadius: 10,
   },
   descrition: {
     paddingTop: '6%',
